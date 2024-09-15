@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'gremio': "./assets/background.png",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
