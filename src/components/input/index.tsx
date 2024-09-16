@@ -1,6 +1,6 @@
 "use client";
 
-import { RegisterOptions, UseFormRegister } from "react-hook-form";
+import type { RegisterOptions, UseFormRegister } from "react-hook-form";
 
 interface InputProps {
   type: string;
@@ -32,8 +32,8 @@ export function Input({
           <div className="flex flex-col space-y-2">
             {options?.map((option, index) => (
               <label
-                key={index}
-                className="flex items-center cursor-pointer hover:opacity-70 duration-150"
+                key={Math.random()}
+                className="flex items-center cursor-pointer hover:opacity-70 duration-150 text-zinc-950"
               >
                 <input
                   type="radio"
@@ -49,7 +49,7 @@ export function Input({
       ) : (
         <>
           <input
-            className={`w-full border-2 rounded-md h-11 px-2 bg-zinc-300`}
+            className="w-full border-2 rounded-md h-11 px-2 bg-zinc-300"
             placeholder={placeholder}
             type={type}
             {...register(name, rules)}
