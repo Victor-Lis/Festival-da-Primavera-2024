@@ -1,6 +1,6 @@
 "use server"
 import { supabase } from ".";
-import { AlunoType } from "@/@types/AlunoType";
+import type { AlunoType } from "@/@types/AlunoType";
 
 export async function getStudentByProjectAndPeriod({
   id,
@@ -10,9 +10,10 @@ export async function getStudentByProjectAndPeriod({
   periodo: "Manhã" | "Tarde" | "Noite"
 }): Promise<AlunoType[]> {
 
-  let { data: alunos, error } = await supabase
+  const { data: alunos, error } = await supabase
   .from('alunos')
   .select('*')
+  .eq("projeto", id)
   .in("periodo", [periodo])
   .limit(100)
           
