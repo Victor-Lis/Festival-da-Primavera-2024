@@ -28,7 +28,7 @@ export default function Projeto({ params }: { params: ProjetoParams }) {
     }
 
     // Comparação por ano (numérica)
-    return parseInt(a.ano) - parseInt(b.ano);
+    return Number.parseInt(a.ano) - Number.parseInt(b.ano);
   }
 
   function organizarAlunos(alunos: AlunoType[]): AlunoType[] {

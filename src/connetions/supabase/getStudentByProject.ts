@@ -17,8 +17,8 @@ export async function getStudentByProjectAndPeriod({
   .in("periodo", [periodo])
   .limit(100)
           
-  console.log("ALUNOS", alunos)
-  console.log("ERROR", error)
+  //console.log("ALUNOS", alunos)
+  //console.log("ERROR", error)
           
   return alunos as unknown as AlunoType[];
 }

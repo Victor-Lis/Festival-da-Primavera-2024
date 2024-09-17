@@ -16,7 +16,7 @@ export async function insertStudentInProject({ aluno }: { aluno: Props }) {
     .select();
 
   // .then((res) => alert(res))
-  console.log("DATA", data);
-  console.log("ERROR", error);
+  //console.log("DATA", data);
+  //console.log("ERROR", error);
   return data || []
 }
