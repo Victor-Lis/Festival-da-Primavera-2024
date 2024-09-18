@@ -1,4 +1,4 @@
-import { AlunoType } from "@/@types/AlunoType";
+import type { AlunoType } from "@/@types/AlunoType";
 import TableTitle from "../TableTitle";
 import TableAlunos from "../TableAlunos";
 
@@ -9,7 +9,7 @@ export default function TableBox({
   title: string;
   alunos: AlunoType[];
 }) {
-  if (!!alunos.length) {
+  if (alunos.length) {
     return (
       <>
         <TableTitle title={title} />

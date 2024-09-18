@@ -1,4 +1,4 @@
-import { AlunoType } from "@/@types/AlunoType";
+import type { AlunoType } from "@/@types/AlunoType";
 import Description from "./Description";
 import TitleRow from "./TitleRow";
 import TableAlunos from "./TableAlunos";

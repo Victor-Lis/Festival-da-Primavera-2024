@@ -1,5 +1,5 @@
 import TableRow from "./TableRow";
-import { AlunoType } from "@/@types/AlunoType";
+import type { AlunoType } from "@/@types/AlunoType";
 
 export default function TableAlunos({alunos}:{alunos: AlunoType[]}) {
   return (
