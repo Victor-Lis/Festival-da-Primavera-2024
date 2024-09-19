@@ -225,6 +225,10 @@ export default async function Home() {
             );
           })}
       </main>
+      <div className="fixed flex gap-x-1.5 bottom-2 right-2 p-2 bg-white rounded">
+        <h2 className="text-blue-500">Feito por</h2>
+        <a className="text-blue-700 font-bold" href="https://www.linkedin.com/in/victor-lis-bronzo/">Victor Lis</a>
+      </div>
     </div>
   );
 }
