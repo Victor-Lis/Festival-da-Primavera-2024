@@ -6,6 +6,7 @@ import BoxTitle from "../BoxTitle";
 import TableTitle from "./TableTitle";
 import Buttons from "./Buttons";
 import TableBox from "./TableBox";
+import { useRef } from "react";
 
 type Props = {
   id: string,
@@ -27,8 +28,8 @@ export default function Modal({
   alunos_noite,
 }: Props) {
   return (
-    <main className="min-h-[90%] min-w-[300px] w-9/12 px-10 py-4 bg-white shadow drop-shadow shadow-blue-500 rounded flex flex-col">
-      <Buttons id={id}/>
+    <main className="min-h-[90%] min-w-[300px] w-9/12 px-10 py-4 bg-white rounded flex flex-col">
+      <Buttons id={id} title={title}/>
       <TitleRow title={title} hora={hora} local={local} />
       {/* <Description desc={desc as string} /> */}
       <TableBox title="Manhã" alunos={alunos_manha}/>

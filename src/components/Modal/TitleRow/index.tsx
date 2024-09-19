@@ -15,11 +15,11 @@ export default function TitleRow({title, hora, local}: Props) {
       </h1>
       <div className="flex flex-col justify-end items-end max-[600px]:items-center flex-1">
         <div className="flex justify-center items-center">
-          <BsClockHistory size={25} color="#1D4ED8" />
+          <BsClockHistory size={25} color="#1D4ED8" id="clock"/>
           <h1 className="text-blue-700 text-2xl ml-2">{hora}</h1>
         </div>
         <div className="flex justify-center items-center">
-          <GrMapLocation size={25} color="#1D4ED8" />
+          <GrMapLocation size={25} color="#1D4ED8" id="localization"/>
           <h1 className="text-blue-700 text-2xl ml-2">{local}</h1>
         </div>
       </div>

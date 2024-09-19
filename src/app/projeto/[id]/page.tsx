@@ -68,7 +68,7 @@ export default function Projeto({ params }: { params: ProjetoParams }) {
   }, [params?.id]);
 
   return (
-    <div className="w-full min-h-[calc(100vh-80px)] flex justify-center bg-[url('./../../public/background.png')] bg-cover bg-center py-[5%]">
+    <div className="w-full min-h-[calc(100vh-80px)] flex justify-center bg-[url('./../../public/background.png')] bg-cover bg-center py-[5%]" id="modal">
       {(!loading && !!projeto) ? (
         <Modal
           id={params?.id}
