@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Inscrições - Festival da Primerava",
+  title: "Inscrições - Festival da Primavera",
   description: "Se inscreva para participar do Festival da Primavera",
 };
 
