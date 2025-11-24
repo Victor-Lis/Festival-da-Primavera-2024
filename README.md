@@ -76,5 +76,5 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=sua_chave_anonima
 npm run dev
 ```
 
-#👤 Autor
+# 👤Autor
 - [@Victor-Lis](https://www.linkedin.com/in/victor-lis-bronzo)
